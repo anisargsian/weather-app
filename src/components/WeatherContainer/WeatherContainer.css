@@ -1,0 +1,21 @@
+.WeatherContainer {
+    color: #1F4371;
+    text-align: center;
+}
+
+.Date {
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.WeatherTable {
+    margin: 0 auto;
+}
+
+.TemperatureCell {
+    width: 200px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

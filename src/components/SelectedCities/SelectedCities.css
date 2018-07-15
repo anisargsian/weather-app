@@ -1,0 +1,7 @@
+.selectedCities {
+    display: inline-block;
+    width: 150px;
+    margin: 8px;
+    text-align: left;
+    cursor: pointer;
+}

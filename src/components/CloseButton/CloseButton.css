@@ -1,0 +1,5 @@
+.closeButton {
+    display: inline-block;
+    width: 6px;
+    cursor: pointer;
+}
