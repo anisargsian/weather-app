@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './DropDownMenu.css';
+import styles from './DropDownMenu.css';
 
 const DropDownMenu = ({ changed, citiesList }) => (
-    <select onChange={changed} className="Dropdown">
+    <select onChange={changed} className={styles.Dropdown}>
         <option>Add City</option>
         {
             citiesList.map(city => 

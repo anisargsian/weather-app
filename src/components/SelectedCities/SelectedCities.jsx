@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CloseButton from '../CloseButton';
 
-import './SelectedCities.css';
+import styles from './SelectedCities.css';
 
 const SelectedCities = ({ selected, close, clicked }) => (
     <ul>
@@ -11,7 +11,7 @@ const SelectedCities = ({ selected, close, clicked }) => (
                 <li key={city.Key}>
                     <div 
                         onClick={clicked} 
-                        className="selectedCities"
+                        className={styles.selectedCities}
                     >
                         {city.EnglishName}
                     </div>

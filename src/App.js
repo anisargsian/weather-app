@@ -3,7 +3,7 @@ import DropDownMenu from './components/DropDownMenu';
 import SelectedCities from './components/SelectedCities';
 import WeatherContainer from './components/WeatherContainer';
 
-import './App.css';
+import styles from './App.css';
 
 class App extends Component {
   state = {
@@ -90,8 +90,8 @@ class App extends Component {
   render() {
     const {currentCity} = this.state;
     return (
-      <div className="App">
-        <div className="leftContainer">
+      <div className={styles.App}>
+        <div className={styles.leftContainer}>
           <DropDownMenu 
             changed={(event) => this.selectCityHandler(event)} 
             citiesList={this.state.cities} 
@@ -102,7 +102,7 @@ class App extends Component {
             selected={this.state.selectedCities}
           />          
         </div>
-        <div className="rightContainer" > 
+        <div className={styles.rightContainer} > 
           {
             currentCity ? <WeatherContainer data={currentCity} /> : null
           }
